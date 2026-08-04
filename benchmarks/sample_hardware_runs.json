@@ -1,0 +1,38 @@
+[
+  {
+    "run_id": 1,
+    "timestamp": "2026-07-27 15:59:25",
+    "model_name": "qwen3:8b",
+    "target_tokens": 150,
+    "actual_tokens": 150,
+    "decode_tps": 1.39,
+    "wall_time_sec": 106.65,
+    "load_ms": 200.78,
+    "prefill_tps": 33.11,
+    "note": "Early baseline before GPU-tuned model routing"
+  },
+  {
+    "run_id": 2,
+    "timestamp": "2026-07-27 16:20:48",
+    "model_name": "qwen-gpu:latest",
+    "target_tokens": 150,
+    "actual_tokens": 150,
+    "decode_tps": 29.68,
+    "wall_time_sec": 11.23,
+    "load_ms": 331.08,
+    "prefill_tps": 92.47,
+    "note": "First GPU-routed run"
+  },
+  {
+    "run_id": 5,
+    "timestamp": "2026-07-27 16:27:12",
+    "model_name": "qwen-gpu:latest",
+    "target_tokens": 150,
+    "actual_tokens": 150,
+    "decode_tps": 37.47,
+    "wall_time_sec": 5.03,
+    "load_ms": 243.59,
+    "prefill_tps": 110.16,
+    "note": "Stabilized GPU decode after routing/tuning"
+  }
+]
